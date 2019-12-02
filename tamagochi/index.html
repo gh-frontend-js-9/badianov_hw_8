@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Tamagochi</title>
+</head>
+<body>
+	<script src="js/main.js"></script>
+	<header>
+		<h1>Tamagochi</h1>
+	</header>
+	<section>
+		<h2>This pet</h2>
+		<div class="type">
+			<select id="status">
+      <option value="1">Hard</option>
+      <option value="0">Easy</option>
+    </select>
+		</div>
+		<div class="stats">
+			<div>Food:<span id="food"></span></div>
+      <div>Clean: <span id="clean"></span></div>
+      <div>Happines: <span id="happines"></span></div>
+      <div>Time: <span id="score"></span></div>
+		</div>
+		<div class="button-block">
+			<button class="button__item" id="start" onclick="Interval()"> Start</button>
+      <button class="treat-button__item" onclick="eat()">Eat</button>
+      <button class="play-button__item" onclick="pla()">Run</button>
+      <button class="health-button__item" onclick="wash()">Wash</button>
+		</div>
+	</section>
+</body>
+</html>
